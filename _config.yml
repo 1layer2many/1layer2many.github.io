@@ -1,10 +1,10 @@
 # --- General options --- #
 
 # Name of website
-title: Shuvam's personal blog
+title: The quotIndian's blog
 
 # Short description of your site
-description: A collection of stuff to help out in time...
+description: A collection of posts to look back at...
 
 # --- Local development options ---
 # If your website is hosted locally rather than on GitHub, then you need to uncomment the next two parameters to set the url and baseurl

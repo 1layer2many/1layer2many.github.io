@@ -17,12 +17,12 @@ Hi! My name is **Suvobrat Ghosh**, or simply, **Shuvam**. I'm a computer program
 
 ### My bucket list
 
-To be honest, I've a teribally long bucket list of things that I wanna do:
+To be honest, I've a not-so-terribly-long bucket list of things that I wanna do:
 
 - Skating
 - Gliding
 - Scuba diving
 - Bungee jumping
-- Snowboarding and so on...
+- Snowboarding among other things...
 
 Watch out this space for more on my adventures...
