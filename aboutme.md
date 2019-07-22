@@ -1,16 +1,28 @@
 ---
 layout: page
 title: About me
-subtitle: Why you'd want to go on a date with me
+# subtitle: Why you'd want to go on a date with me
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+Hi! My name is **Suvobrat Ghosh**, or simply, **Shuvam**. I'm a computer programmer by profession and a machine learning enthusiast at heart. When I'm not busy at work (which is very often), I like to do a lot of stuff:
 
-- I rock a great mustache
-- I'm extremely loyal to my family
+- I like to prepare delicacies
+- I like to play football
+- I like to read books while sipping a cuppa coffee
+- I love speedcubing
+- I like to go out on long rides, preferrably on 2 wheelers
+- I love sketching
+- I like to play guitar while humming my favorite tunes
+- I love creating memes
 
-What else do you need?
+### My bucket list
 
-### my history
+To be honest, I've a teribally long bucket list of things that I wanna do:
 
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](http://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+- Skating
+- Gliding
+- Scuba diving
+- Bungee jumping
+- Snowboarding and so on...
+
+Watch out this space for more on my adventures...
