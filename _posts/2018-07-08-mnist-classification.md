@@ -9,7 +9,7 @@ tags: [keras, mnist, cnn]
 comments: false
 ---
 
-It's been a while since my last (and first) post. So to formally publish my first post, let's review the basics of neural nets with a look into MNIST classification using the Keras library. But before we dive into the nitty gritty of Keras, let's take a look at how convolutional neural nets.
+It's been a while since my last (and first) post. So to formally publish my first post, let's review the basics of neural nets with a look into MNIST classification using the Keras library. But before we dive into the nitty gritty of Keras, let's take a look at how neural nets work.
 
 ## What are neural nets?
 
@@ -21,9 +21,13 @@ But what does that actually mean? Basically, a neural net or, in our case, an ar
 
 Neural networks can be used to extract features that can then be fed to other algorithms like clustering, classification and regression. Here, we will concentrate on the classification part of neural networks. Like most things in this universe, neurons need to learn to make sense of the input signals in order to be able to predict results. Thus any network needs to be trained on labeled dataset before it can be used to properly classify data. But before that, let's have a look at a neural network:
 
-{% include image.html url="https://res.cloudinary.com/dirqzbilx/image/upload/v1563976132/neural_net_basic_nivx6h.png" description="A 2-layer neural net" %}
-<!-- ![neural_net](https://res.cloudinary.com/dirqzbilx/image/upload/v1563976132/neural_net_basic_nivx6h.png){: .center-block :} -->
+{% include image.html url="https://res.cloudinary.com/dirqzbilx/image/upload/v1563976132/neural_net_basic_nivx6h.png" description="Fig 1. A 2-layer neural net" %}
 
+Figure 1 represents a 2-layer neural network. The number of layers constitute of the input and the hidden layers, with the output layer not counted in the layer count. The layers between input and output layers constitute the hidden layers, with every layer consisting of multiple neurons. Shallower networks such as the one show in figure 1 can only learn a certain number of features, leading to inaccurate predictions. With increasing number of hidden layers, the depth of the network increases resulting in deep neural networks. Modern neural network architectures almost exclusively use deep neural networks  as they can learn a huge number of features provided enough data, helping increase the quality of the prediction made.
+
+Let's take a look at how a single neuron works.
+
+{% include image.html url="https://res.cloudinary.com/dirqzbilx/image/upload/v1563991782/ann_node_h9282e.png" description="Fig 2. A neuron in a typical neural net" %}
 
 You can write regular [markdown](http://markdowntutorial.com/) here and Jekyll will automatically convert it to a nice webpage.  I strongly encourage you to [take 5 minutes to learn how to write in markdown](http://markdowntutorial.com/) - it'll teach you how to transform regular text into bold/italics/headings/tables/etc.
 
