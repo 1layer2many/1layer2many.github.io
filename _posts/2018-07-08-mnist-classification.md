@@ -4,6 +4,7 @@ title: MNIST dataset classification using Keras
 subtitle: and a basic introduction to neural networks
 # gh-repo: daattali/beautiful-jekyll
 # gh-badge: [star, fork, follow]
+bigimg: /img/banner.jpg
 tags: [keras, mnist, cnn]
 comments: false
 ---
