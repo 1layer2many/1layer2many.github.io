@@ -1,7 +1,7 @@
 ---
 layout: post
 title: MNIST dataset classification using Keras
-subtitle: Including a basic introduction to CNN...
+subtitle: and a basic introduction to CNN...
 # gh-repo: daattali/beautiful-jekyll
 # gh-badge: [star, fork, follow]
 tags: [keras, mnist, cnn]
@@ -12,13 +12,13 @@ It's been a while since my last (and first) post. So to formally publish my firs
 
 ## What are neural nets?
 
-According to wiki:
+According to wiki...
 
 > "A neural network is either a biological neural network, made up of real biological neurons, or an artificial neural network, for solving artificial intelligence problems."
 
-But what does that actually mean? Basically, a neural net or, in our case, an artificial neural net is meant operate similar to biological neural networks in our brain. Neurons represent the most basic units of a neural net. Every neuron is connected to multiple neurons, which work together to process an input and generate an output based on the parameters learned by the neurons.
+But what does that actually mean? Basically, a neural net or, in our case, an artificial neural net is meant operate similar to biological neural networks in our brain. Neurons represent the most basic units of a neural net. An artificial neuron that receives a signal can process it and then signal additional artificial neurons connected to it, which work together to recognize patterns that may be present in the input signals.
 
-But neurons need to learn to process its input in order to
+But like most stuff, neurons need to learn to make sense of the input received in order for the entire network to make accurate predictions. This is where human intervention is required, as  
 
 ![neural_net](https://res.cloudinary.com/dirqzbilx/image/upload/v1563976132/neural_net_basic_nivx6h.png){: .center-block :}
 
