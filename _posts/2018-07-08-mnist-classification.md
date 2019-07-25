@@ -23,11 +23,17 @@ Neural networks can be used to extract features that can then be fed to other al
 
 {% include image.html url="https://res.cloudinary.com/dirqzbilx/image/upload/v1563976132/neural_net_basic_nivx6h.png" description="Fig 1. A 2-layer neural net" %}
 
-Figure 1 represents a 2-layer neural network. The number of layers constitute of the input and the hidden layers, with the output layer not counted in the layer count. The layers between input and output layers constitute the hidden layers, with every layer consisting of multiple neurons. Shallower networks such as the one show in figure 1 can only learn a certain number of features, leading to inaccurate predictions. With increasing number of hidden layers, the depth of the network increases resulting in deep neural networks. Modern neural network architectures almost exclusively use deep neural networks  as they can learn a huge number of features provided enough data, helping increase the quality of the prediction made.
+Figure 1 represents a 2-layer neural network. The number of layers constitute of the input and the hidden layers, with the output layer not counted in the layer count. The layers between input and output layers constitute the hidden layers, with every layer consisting of multiple neurons. These layers are hidden since they aren't visible as the output. Shallower networks such as the one show in figure 1 can only learn a certain number of features, leading to inaccurate predictions. With increasing number of hidden layers, the depth of the network increases resulting in deep neural networks. Modern neural network architectures almost exclusively use deep neural networks  as they can learn a huge number of features provided enough data, helping increase the quality of the prediction made.
 
 Let's take a look at how a single neuron works.
 
 {% include image.html url="https://res.cloudinary.com/dirqzbilx/image/upload/v1563991782/ann_node_h9282e.png" description="Fig 2. A neuron in a typical neural net" %}
+
+As can be seen in figure 2, there's a weight associated with each input. When a neuron gets activated, it computes its state by summing over all the incoming inputs multiplied by its corresponding connection weight. There is a bias term (usually set to 1) associated with every neuron (along with it's own trainable weight). This makes sure that even with all-zero inputs, there's a non-zero probability of activation in the neuron. 
+
+Following it's computation, the state passes through the neuron's activation function. Since the state is just a value at this point, the activation function helps make use of this value to determine an output. The activation function achieves this by normalizing the state value and then deciding whether or not to fire the successive neuron based on a threshold value.
+ 
+One can also notice the transfer function to be a linear function, which means that the state is just a linear combination of the input varaiables. This isn't really useful as linear functions  
 
 You can write regular [markdown](http://markdowntutorial.com/) here and Jekyll will automatically convert it to a nice webpage.  I strongly encourage you to [take 5 minutes to learn how to write in markdown](http://markdowntutorial.com/) - it'll teach you how to transform regular text into bold/italics/headings/tables/etc.
 
