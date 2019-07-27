@@ -33,9 +33,13 @@ As can be seen in figure 2, there's a weight associated with each input. When a 
 
 Following it's computation, the state passes through the neuron's activation function. Since the state is just a value at this point, the activation function helps make use of this value to determine an output. The activation function achieves this by normalizing the state value and then deciding whether or not to fire the successive neuron based on a threshold value.
  
-One can also notice the transfer function to be a linear function, which means that the state is just a linear combination of the input varaiables. This isn't really useful as linear functions  
+One can also notice the transfer function to be a linear function, which means that the state is just a linear combination of the input variables. This isn't really useful as linear functions would effectively reduce the entire network to a single layered one. Hence, we make use of what we call non-linear activation functions. Non-linear activation functions can map the complexities of the given data which help the network in learning many interesting features.
 
-You can write regular [markdown](http://markdowntutorial.com/) here and Jekyll will automatically convert it to a nice webpage.  I strongly encourage you to [take 5 minutes to learn how to write in markdown](http://markdowntutorial.com/) - it'll teach you how to transform regular text into bold/italics/headings/tables/etc.
+Training a neural network then means calibrating the weights associated with the neurons by repeating two key steps, namely forward and back propagation. During forward propagation, we apply a set of weights to the input at each "layer" and calculate an output. There are various techniques of initializing the weights, the details of which can be found [here](https://www.deeplearning.ai/ai-notes/initialization/). Proper initialization can help speed up the convergence of the optimizer towards global minima. Meanwhile during back propagation, we measure the error between the obtained and actual output and adjust the weights accordingly so as to decrease the error margin.
+
+Neural networks repeat both forward and back propagation until the weights are calibrated to accurately predict correct output. Similar to forward propagation, back propagation calculations occurs at each "layer". We begin by changing the weights between the hidden layer and the output layer and proceed to propagate the effects towards the initial layers. The change in weight is acquired by finding the derivative of the activation function, which gives us the rate of change at that function. Weight changes for preceding layer can be calculated from the output layer using **chain rule**. Over multiple iterations (or epochs), the network converges towards the global minimum leading to better predictions.
+
+<!-- You can write regular [markdown](http://markdowntutorial.com/) here and Jekyll will automatically convert it to a nice webpage.  I strongly encourage you to [take 5 minutes to learn how to write in markdown](http://markdowntutorial.com/) - it'll teach you how to transform regular text into bold/italics/headings/tables/etc.
 
 **Here is some bold text**
 
@@ -101,4 +105,4 @@ You can add notification, warning and error boxes like this:
 ### Error
 
 {: .box-error}
-**Error:** This is an error box.
+**Error:** This is an error box. -->
