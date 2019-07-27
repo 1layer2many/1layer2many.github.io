@@ -37,7 +37,11 @@ One can also notice the transfer function to be a linear function, which means t
 
 Training a neural network then means calibrating the weights associated with the neurons by repeating two key steps, namely forward and back propagation. During forward propagation, we apply a set of weights to the input at each "layer" and calculate an output. There are various techniques of initializing the weights, the details of which can be found [here](https://www.deeplearning.ai/ai-notes/initialization/). Proper initialization can help speed up the convergence of the optimizer towards global minima. Meanwhile during back propagation, we measure the error between the obtained and actual output and adjust the weights accordingly so as to decrease the error margin.
 
+{% include image.html url="https://res.cloudinary.com/dirqzbilx/image/upload/e_grayscale,q_100/v1564208820/forward_back_prop_rptvzl.png" description="Fig 3. Forward and backward propagation example for a 2-layer network" %}
+
 Neural networks repeat both forward and back propagation until the weights are calibrated to accurately predict correct output. Similar to forward propagation, back propagation calculations occurs at each "layer". We begin by changing the weights between the hidden layer and the output layer and proceed to propagate the effects towards the initial layers. The change in weight is acquired by finding the derivative of the activation function, which gives us the rate of change at that function. Weight changes for preceding layer can be calculated from the output layer using **chain rule**. Over multiple iterations (or epochs), the network converges towards the global minimum leading to better predictions.
+
+
 
 <!-- You can write regular [markdown](http://markdowntutorial.com/) here and Jekyll will automatically convert it to a nice webpage.  I strongly encourage you to [take 5 minutes to learn how to write in markdown](http://markdowntutorial.com/) - it'll teach you how to transform regular text into bold/italics/headings/tables/etc.
 
