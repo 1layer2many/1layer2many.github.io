@@ -1,12 +1,32 @@
 ---
 layout: post
-title: A look into the working of 
+title: A look into the working of GANs
 subtitle: A brief look at their architecture
 bigimg: /img/banner.jpg
-tags: [ann, neural]
+tags: [gan, cnn]
 comments: false
 ---
 
+```python
+def create_disc_model():
+    model = Sequential()
+
+    model.add(Conv2D(filters=64, kernel_size=3, padding='same', strides=(2,2), name='conv_layer_1', input_shape=(dim, dim, num_channels)))
+    model.add(LeakyReLU(alpha=0.2))
+    model.add(Dropout(0.4))
+
+    model.add(Conv2D(filters=64, kernel_size=3, padding='same', strides=(2,2), name='conv_layer_2'))
+    model.add(LeakyReLU(alpha=0.2))
+    model.add(Dropout(0.4))
+  
+    model.add(Flatten())
+    model.add(Dense(1, activation='sigmoid'))
+    model.compile(optimizer=keras.optimizers.Adam(lr=0.0002, beta_1=0.5),
+              loss='binary_crossentropy',
+              metrics=['accuracy'])
+
+    return model
+```
 It's been a while since my last (and first) post. So to formally publish my first post, let's review the basics of neural nets with a deeper look into their architecture. But before we dive into the nitty gritty, let's take a look at how neural nets work at a top level.
 
 ## What are neural nets?

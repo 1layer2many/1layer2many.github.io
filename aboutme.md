@@ -10,10 +10,12 @@ Hi! My name is **Suvobrat Ghosh**, or simply, **Shuvam**. I'm a computer program
 - I like to play football
 - I like to read books while sipping a cuppa coffee
 - I love speedcubing
-- I like to go out on long rides, preferrably on 2 wheelers
+- I like to go out on long rides, preferably on 2 wheelers
 - I love sketching
 - I like to play guitar while humming my favorite tunes
 - I love creating memes
+
+You can find my CV over here.
 
 ### My bucket list
 
