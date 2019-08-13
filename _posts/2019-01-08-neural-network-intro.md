@@ -1,7 +1,7 @@
 ---
 layout: post
 title: A look into the working of GANs...
-subtitle: ...Gaand a dive into some of its implementations
+subtitle: ...and a dive into some of its implementations
 bigimg: /img/banner.jpg
 tags: [gan, cnn]
 comments: false
@@ -24,8 +24,8 @@ def create_disc_model():
     model.add(Flatten())
     model.add(Dense(1, activation='sigmoid'))
     model.compile(optimizer=keras.optimizers.Adam(lr=0.0002, beta_1=0.5),
-              loss='binary_crossentropy',
-              metrics=['accuracy'])
+            loss='binary_crossentropy',
+            metrics=['accuracy'])
 
     return model
 ```
