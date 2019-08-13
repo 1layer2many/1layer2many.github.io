@@ -1,7 +1,7 @@
 ---
 layout: post
-title: A look into the working of GANs
-subtitle: A brief look at their architecture
+title: A look into the working of GANs...
+subtitle: ...Gaand a dive into some of its implementations
 bigimg: /img/banner.jpg
 tags: [gan, cnn]
 comments: false
@@ -11,11 +11,13 @@ comments: false
 def create_disc_model():
     model = Sequential()
 
-    model.add(Conv2D(filters=64, kernel_size=3, padding='same', strides=(2,2), name='conv_layer_1', input_shape=(dim, dim, num_channels)))
+    model.add(Conv2D(filters=64, kernel_size=3, padding='same', strides=(2,2), 
+            name='conv_layer_1', input_shape=(dim, dim, num_channels)))
     model.add(LeakyReLU(alpha=0.2))
     model.add(Dropout(0.4))
 
-    model.add(Conv2D(filters=64, kernel_size=3, padding='same', strides=(2,2), name='conv_layer_2'))
+    model.add(Conv2D(filters=64, kernel_size=3, padding='same', strides=(2,2),
+            name='conv_layer_2'))
     model.add(LeakyReLU(alpha=0.2))
     model.add(Dropout(0.4))
   
