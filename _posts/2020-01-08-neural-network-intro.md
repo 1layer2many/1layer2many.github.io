@@ -1,6 +1,6 @@
 ---
 layout: post
-title: A look into the working of GANs...
+title: VAEs...
 subtitle: ...and a dive into some of its implementations (updated with code)
 bigimg: /img/banner.jpg
 tags: [gan, cnn]
@@ -20,6 +20,10 @@ The inception of GAN can be traced just a few years back to 2014 by a ML researc
 GANs are categorized as **generative models**, which comes under the broad category of, you know it, **unsupervised learning**.
 There have been several applications of GANs ever since in the fields of text, image and video generation.
 The author presents it intuitively as a minimax game, wherein one agent tries to maximize a value function while the other seeks to minimize it. Interestingly, GANs weren't the first proposed models to employ optimization of multiple networks.
+
+Variational autoencoders differentiate from normal autoencoders in that the enocder is represented by a probabilistic endocder and decoder.
+Loss is represented as [image]
+
 
 ```python
 def create_disc_model():
